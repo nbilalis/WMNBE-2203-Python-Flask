@@ -1,0 +1,11 @@
+{
+  "name": "WBD3002-20T2-JavaScript",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/nbilalis/WBD3002-20T2-JavaScript.git",
+  "author": "Nicholaos Bilalis <n.bilalis@sae.edu>",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^12.0.0"
+  }
+}

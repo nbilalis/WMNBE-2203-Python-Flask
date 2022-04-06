@@ -1,0 +1,549 @@
+$accent-color: #743bbc;
+
+.remark-slide {
+  color: white;
+  font-family: "Century Gothic";
+
+  .remark-slide-content {
+    font-size: 24px;
+    padding: 1em 2em;
+  }
+
+  h1 {
+    font-size: 3.5em; // around 80px
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2em; // around 48px
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 1.75em; // around 42px
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 1.5em; // around 36px
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: 1em; // around 30px
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  p {
+    line-height: 1.4em; // around 24px
+  }
+
+  a {
+    text-decoration: none;
+    color: #f49100;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  h4:first-child,
+  p:first-child,
+  ul:first-child {
+    margin-top: 0;
+  }
+
+  * + p {
+    margin-top: 1em;
+  }
+
+  pre {
+    margin-top: 1rem;
+  }
+
+  em {
+    color: lightcoral; // lightsalmon
+  }
+
+  li {
+    margin-top: 0.5em;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  thead {
+    border-bottom: 1px solid gray;
+  }
+
+  th {
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    padding: 0.25em 0.5em;
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 + p img {
+    height: 25vw;
+  }
+
+  h4 + p img {
+    height: 20vw;
+  }
+
+  $topbar-height: 100px;
+  $logo-height: 60px;
+  $horizontal-margin: 40px;
+
+  .common {
+    $start-color: #262626;
+    $end-color: #0d0d0d;
+    background: linear-gradient(
+      to bottom,
+      $start-color $topbar-height,
+      $end-color $topbar-height,
+      $end-color 100%
+    );
+
+    &.topbar-space {
+      padding-top: $topbar-height;
+    }
+
+    .logo-sae,
+    .logo-web {
+      img {
+        height: $logo-height;
+        max-width: initial;
+        margin: initial;
+      }
+
+      position: absolute;
+      top: ($topbar-height - $logo-height) / 2;
+      z-index: 999;
+    }
+
+    .logo-sae {
+      left: $horizontal-margin;
+    }
+
+    .logo-web {
+      right: $horizontal-margin;
+    }
+
+    .ruler, .footer {
+      line-height: 1em;
+    }
+
+    .ruler {
+      color: white;
+      font-family: Arial;
+      font-size: 22pt;
+      font-weight: bold;
+      letter-spacing: 1px;
+      position: absolute;
+      bottom: 40px;
+      z-index: 997;
+
+      $foo: 3%;
+      $bar: 13.6%;
+      &.one {
+        color: #49b1b8;
+        left: $foo;
+      }
+      &.two {
+        color: #307fe2;
+        left: $foo + $bar;
+      }
+      &.three {
+        color: #6da78e;
+        left: $foo + 2 * $bar;
+      }
+      &.four {
+        color: #ecb730;
+        left: $foo + 3 * $bar;
+      }
+      &.five {
+        color: #c72f2d;
+        left: $foo + 4 * $bar;
+      }
+      &.six {
+        color: #00acec;
+        left: $foo + 5 * $bar;
+      }
+      &.seven {
+        color: #6a519d;
+        left: $foo + 6 * $bar;
+      }
+    }
+
+    .footer {
+      color: gray;
+      font-size: 14pt;
+      font-style: italic;
+      position: absolute;
+      bottom: 18px;
+      left: $horizontal-margin;
+      z-index: 997;
+
+      a {
+        color: gray;
+      }
+    }
+  }
+
+  $bg-opacity: 0.75;
+
+  .cover {
+    border: 10px solid $accent-color;
+    background: linear-gradient(
+        rgba(0, 0, 0, $bg-opacity),
+        rgba(0, 0, 0, $bg-opacity)
+      ),
+      url("../img/cover-bg.png");
+    background-position: center top;
+    background-size: cover;
+    vertical-align: middle;
+    text-align: center;
+
+    h2 {
+      color: gray;
+    }
+
+    h3 {
+      color: $accent-color;
+      font-size: 36pt; // 28pt;
+    }
+
+    .logo-sae {
+      top: 50px;
+      left: 50px;
+    }
+
+    .logo-web {
+      top: initial;
+      bottom: 30px;
+      right: 35px;
+
+      img {
+        height: 80px;
+      }
+    }
+
+    .ruler,
+    .footer,
+    .remark-slide-number {
+      display: none;
+    }
+  }
+
+  .section {
+    h2 {
+      font-size: 2.5em; // around 60px
+      color: $accent-color;
+    }
+
+    img {
+      max-height: 18em;
+    }
+  }
+
+  $sidebar-width: 25%;
+
+  $padding-top: 3.5rem;
+
+  .section-details {
+    $section-details-sidebar-width: 30%;
+
+    h3 {
+      font-size: 2rem;
+      position: absolute;
+      top: $topbar-height;
+      left: 0;
+      bottom: 0;
+      width: $section-details-sidebar-width;
+      margin: 0;
+      padding-top: $padding-top;
+      text-align: center;
+      background: linear-gradient(
+          rgba(0, 0, 0, $bg-opacity),
+          rgba(0, 0, 0, $bg-opacity)
+        ),
+        url("../img/sidebar-bg.png");
+      background-size: cover;
+    }
+
+    > ul {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: 0;
+      padding: calc(#{$topbar-height} + #{$padding-top} + 0.5rem) 0 0 4em;
+      font-size: 18pt;
+      line-height: 1.5;
+      width: 100% - $section-details-sidebar-width;
+      box-sizing: border-box;
+      border-left: 12px $accent-color solid;
+      z-index: 998;
+
+      li {
+        margin: 0;
+      }
+
+      /* > :first-child {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 70%;
+				padding: 1rem;
+			} */
+    }
+  }
+
+  .chapter {
+    > :not(span) {
+      margin-left: calc(#{$sidebar-width} + 2rem);
+    }
+
+    > h3 {
+      font-size: 1.7em; // around 48px
+      color: $accent-color;
+      position: absolute;
+      top: calc(#{$topbar-height} + #{$padding-top});
+      left: 0;
+      width: $sidebar-width;
+      margin: 0;
+      padding: 1em 0.75em;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+
+    > h4 {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+
+    > h5 {
+      font-size: 1em;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    > p {
+      img {
+        display: block;
+        max-width: 90%;
+        margin: 2rem auto;
+      }
+    }
+
+    blockquote {
+      font-style: italic;
+      color: lightblue;
+    }
+  }
+
+  .list {
+    h3 {
+      color: $accent-color;
+      font-size: 32pt;
+      margin-bottom: 1em;
+    }
+
+    ul {
+      padding-left: 0;
+      columns: 2;
+      column-gap: 3em;
+
+      li {
+        list-style-type: none;
+        break-inside: avoid-column;
+        margin-top: 0;
+        margin-bottom: 1em;
+        font-size: 0.8em;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+      }
+
+      a {
+        display: block;
+        white-space: nowrap;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+
+  // Border angles
+
+  $angle-width: 40px;
+  $angle-border: 1px;
+
+  .section-details {
+    > ul {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        right: 3rem;
+        width: $angle-width;
+        height: $angle-width;
+        border-right: $angle-border white solid;
+      }
+
+      &::before {
+        top: calc(#{$topbar-height} + 3rem);
+        border-top: $angle-border white solid;
+      }
+
+      &::after {
+        bottom: calc(#{$topbar-height});
+        border-bottom: $angle-border white solid;
+      }
+    }
+  }
+
+  .chapter {
+    > h3 {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: $angle-width;
+        height: $angle-width;
+        border-right: $angle-border white solid;
+      }
+
+      &::before {
+        top: -0.5em;
+        border-top: $angle-border white solid;
+      }
+
+      &::after {
+        bottom: -0.5em;
+        border-bottom: $angle-border white solid;
+      }
+    }
+  }
+
+  .remark-code {
+    font-size: 0.8em;
+  }
+
+  // Custom slide classes
+
+  .long-text {
+    h4 {
+      margin-bottom: 0.5em;
+    }
+
+    td {
+      font-size: 0.7em;
+    }
+
+    td,
+    th {
+      padding: 0.4em 0.4em;
+    }
+
+    p,
+    li {
+      font-size: 0.9em;
+    }
+  }
+
+  .extra-long-text {
+    h4 {
+      margin-bottom: 0.5em;
+    }
+
+    td {
+      font-size: 0.65em;
+    }
+
+    td,
+    th {
+      padding: 0.35em 0.35em;
+    }
+
+    p,
+    li {
+      font-size: 0.85em;
+    }
+  }
+
+  .long-code .remark-code {
+    font-size: 0.7em;
+  }
+
+  .extra-long-code .remark-code {
+    font-size: 0.6em;
+  }
+
+  .hide-table-head {
+    thead {
+      display: none;
+    }
+  }
+
+  .remark-inline-code {
+    color: #ecb730;
+    font-weight: bold;
+    font-family: "Century Gothic";
+  }
+
+  .remark-slide-number {
+    font-size: 14pt;
+    //		font-weight: bold;
+    color: white;
+    bottom: 20px !important;
+    right: $horizontal-margin !important;
+  }
+}
+
+pre[class*="language-"] {
+  padding: 0.5em;
+  line-height: 1.15;
+  background-color: #1a1a1a;
+}
+
+.token.comment {
+  color: darkgreen;
+}
+
+.token.interpolation {
+  color: #e2777a;
+}
+
+.token.punctuation, .token.interpolation-punctuation {
+  color: #67cdcc;
+}
+
+@media print {
+  .remark-slide-scaler {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform-origin: initial;
+    transform-origin: initial;
+    transform: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    left: auto !important;
+    top: auto !important;
+  }
+}

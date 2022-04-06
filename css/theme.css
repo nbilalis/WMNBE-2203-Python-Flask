@@ -1,0 +1,409 @@
+.remark-slide {
+  color: white;
+  font-family: "Century Gothic";
+}
+.remark-slide .remark-slide-content {
+  font-size: 24px;
+  padding: 1em 2em;
+}
+.remark-slide h1 {
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.remark-slide h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.remark-slide h3 {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+.remark-slide h4 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.remark-slide h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.remark-slide p {
+  line-height: 1.4em;
+}
+.remark-slide a {
+  text-decoration: none;
+  color: #f49100;
+}
+.remark-slide a:hover {
+  text-decoration: underline;
+}
+.remark-slide h4:first-child,
+.remark-slide p:first-child,
+.remark-slide ul:first-child {
+  margin-top: 0;
+}
+.remark-slide * + p {
+  margin-top: 1em;
+}
+.remark-slide pre {
+  margin-top: 1rem;
+}
+.remark-slide em {
+  color: lightcoral;
+}
+.remark-slide li {
+  margin-top: 0.5em;
+}
+.remark-slide table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+.remark-slide thead {
+  border-bottom: 1px solid gray;
+}
+.remark-slide th {
+  white-space: nowrap;
+}
+.remark-slide th,
+.remark-slide td {
+  padding: 0.25em 0.5em;
+}
+.remark-slide img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.remark-slide h3 + p img {
+  height: 25vw;
+}
+.remark-slide h4 + p img {
+  height: 20vw;
+}
+.remark-slide .common {
+  background: linear-gradient(to bottom, #262626 100px, #0d0d0d 100px, #0d0d0d 100%);
+}
+.remark-slide .common.topbar-space {
+  padding-top: 100px;
+}
+.remark-slide .common .logo-sae,
+.remark-slide .common .logo-web {
+  position: absolute;
+  top: 20px;
+  z-index: 999;
+}
+.remark-slide .common .logo-sae img,
+.remark-slide .common .logo-web img {
+  height: 60px;
+  max-width: initial;
+  margin: initial;
+}
+.remark-slide .common .logo-sae {
+  left: 40px;
+}
+.remark-slide .common .logo-web {
+  right: 40px;
+}
+.remark-slide .common .ruler, .remark-slide .common .footer {
+  line-height: 1em;
+}
+.remark-slide .common .ruler {
+  color: white;
+  font-family: Arial;
+  font-size: 22pt;
+  font-weight: bold;
+  letter-spacing: 1px;
+  position: absolute;
+  bottom: 40px;
+  z-index: 997;
+}
+.remark-slide .common .ruler.one {
+  color: #49b1b8;
+  left: 3%;
+}
+.remark-slide .common .ruler.two {
+  color: #307fe2;
+  left: 16.6%;
+}
+.remark-slide .common .ruler.three {
+  color: #6da78e;
+  left: 30.2%;
+}
+.remark-slide .common .ruler.four {
+  color: #ecb730;
+  left: 43.8%;
+}
+.remark-slide .common .ruler.five {
+  color: #c72f2d;
+  left: 57.4%;
+}
+.remark-slide .common .ruler.six {
+  color: #00acec;
+  left: 71%;
+}
+.remark-slide .common .ruler.seven {
+  color: #6a519d;
+  left: 84.6%;
+}
+.remark-slide .common .footer {
+  color: gray;
+  font-size: 14pt;
+  font-style: italic;
+  position: absolute;
+  bottom: 18px;
+  left: 40px;
+  z-index: 997;
+}
+.remark-slide .common .footer a {
+  color: gray;
+}
+.remark-slide .cover {
+  border: 10px solid #743bbc;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/cover-bg.png");
+  background-position: center top;
+  background-size: cover;
+  vertical-align: middle;
+  text-align: center;
+}
+.remark-slide .cover h2 {
+  color: gray;
+}
+.remark-slide .cover h3 {
+  color: #743bbc;
+  font-size: 36pt;
+}
+.remark-slide .cover .logo-sae {
+  top: 50px;
+  left: 50px;
+}
+.remark-slide .cover .logo-web {
+  top: initial;
+  bottom: 30px;
+  right: 35px;
+}
+.remark-slide .cover .logo-web img {
+  height: 80px;
+}
+.remark-slide .cover .ruler,
+.remark-slide .cover .footer,
+.remark-slide .cover .remark-slide-number {
+  display: none;
+}
+.remark-slide .section h2 {
+  font-size: 2.5em;
+  color: #743bbc;
+}
+.remark-slide .section img {
+  max-height: 18em;
+}
+.remark-slide .section-details h3 {
+  font-size: 2rem;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  margin: 0;
+  padding-top: 3.5rem;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/sidebar-bg.png");
+  background-size: cover;
+}
+.remark-slide .section-details > ul {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: calc(100px + 3.5rem + 0.5rem) 0 0 4em;
+  font-size: 18pt;
+  line-height: 1.5;
+  width: 70%;
+  box-sizing: border-box;
+  border-left: 12px #743bbc solid;
+  z-index: 998;
+  /* > :first-child {
+  	position: absolute;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	width: 70%;
+  	padding: 1rem;
+  } */
+}
+.remark-slide .section-details > ul li {
+  margin: 0;
+}
+.remark-slide .chapter > :not(span) {
+  margin-left: calc(25% + 2rem);
+}
+.remark-slide .chapter > h3 {
+  font-size: 1.7em;
+  color: #743bbc;
+  position: absolute;
+  top: calc(100px + 3.5rem);
+  left: 0;
+  width: 25%;
+  margin: 0;
+  padding: 1em 0.75em;
+  box-sizing: border-box;
+  text-align: center;
+}
+.remark-slide .chapter > h4 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+.remark-slide .chapter > h5 {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.remark-slide .chapter > p img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+.remark-slide .chapter blockquote {
+  font-style: italic;
+  color: lightblue;
+}
+.remark-slide .list h3 {
+  color: #743bbc;
+  font-size: 32pt;
+  margin-bottom: 1em;
+}
+.remark-slide .list ul {
+  padding-left: 0;
+  columns: 2;
+  column-gap: 3em;
+}
+.remark-slide .list ul li {
+  list-style-type: none;
+  break-inside: avoid-column;
+  margin-top: 0;
+  margin-bottom: 1em;
+  font-size: 0.8em;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.remark-slide .list ul a {
+  display: block;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.remark-slide .section-details > ul::before, .remark-slide .section-details > ul::after {
+  content: "";
+  position: absolute;
+  right: 3rem;
+  width: 40px;
+  height: 40px;
+  border-right: 1px white solid;
+}
+.remark-slide .section-details > ul::before {
+  top: calc(100px + 3rem);
+  border-top: 1px white solid;
+}
+.remark-slide .section-details > ul::after {
+  bottom: calc(100px);
+  border-bottom: 1px white solid;
+}
+.remark-slide .chapter > h3::before, .remark-slide .chapter > h3::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-right: 1px white solid;
+}
+.remark-slide .chapter > h3::before {
+  top: -0.5em;
+  border-top: 1px white solid;
+}
+.remark-slide .chapter > h3::after {
+  bottom: -0.5em;
+  border-bottom: 1px white solid;
+}
+.remark-slide .remark-code {
+  font-size: 0.8em;
+}
+.remark-slide .long-text h4 {
+  margin-bottom: 0.5em;
+}
+.remark-slide .long-text td {
+  font-size: 0.7em;
+}
+.remark-slide .long-text td,
+.remark-slide .long-text th {
+  padding: 0.4em 0.4em;
+}
+.remark-slide .long-text p,
+.remark-slide .long-text li {
+  font-size: 0.9em;
+}
+.remark-slide .extra-long-text h4 {
+  margin-bottom: 0.5em;
+}
+.remark-slide .extra-long-text td {
+  font-size: 0.65em;
+}
+.remark-slide .extra-long-text td,
+.remark-slide .extra-long-text th {
+  padding: 0.35em 0.35em;
+}
+.remark-slide .extra-long-text p,
+.remark-slide .extra-long-text li {
+  font-size: 0.85em;
+}
+.remark-slide .long-code .remark-code {
+  font-size: 0.7em;
+}
+.remark-slide .extra-long-code .remark-code {
+  font-size: 0.6em;
+}
+.remark-slide .hide-table-head thead {
+  display: none;
+}
+.remark-slide .remark-inline-code {
+  color: #ecb730;
+  font-weight: bold;
+  font-family: "Century Gothic";
+}
+.remark-slide .remark-slide-number {
+  font-size: 14pt;
+  color: white;
+  bottom: 20px !important;
+  right: 40px !important;
+}
+
+pre[class*=language-] {
+  padding: 0.5em;
+  line-height: 1.15;
+  background-color: #1a1a1a;
+}
+
+.token.comment {
+  color: darkgreen;
+}
+
+.token.interpolation {
+  color: #e2777a;
+}
+
+.token.punctuation, .token.interpolation-punctuation {
+  color: #67cdcc;
+}
+
+@media print {
+  .remark-slide-scaler {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform-origin: initial;
+    transform-origin: initial;
+    transform: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    left: auto !important;
+    top: auto !important;
+  }
+}

@@ -1,0 +1,8 @@
+*.map
+*.zip
+*.pptx
+*.cmd
+
+node_modules/
+.venv/
+__pycache__/
