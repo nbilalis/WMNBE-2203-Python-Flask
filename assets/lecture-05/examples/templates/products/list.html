@@ -1,0 +1,15 @@
+{% extends "_layout.html" %}
+
+{% block title %}Products{% endblock %}
+
+{% block main %}
+<h1>Products</h1>
+<ul>
+    {% for sku, product in products.items() %}
+    <li>
+        <a href="{{ url_for('product_details', sku=sku) }}">{{ product.title }}</a>
+         - {{ product.price|currency }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock main %}

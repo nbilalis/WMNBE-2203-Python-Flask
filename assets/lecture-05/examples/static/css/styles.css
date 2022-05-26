@@ -1,0 +1,14 @@
+nav > ul {
+    display: flex;
+    padding: 0
+}
+
+nav li {
+    list-style-type: none;
+    margin: .1em;
+}
+
+nav a {
+    padding: .5em;
+    border: 1px solid black;
+}
