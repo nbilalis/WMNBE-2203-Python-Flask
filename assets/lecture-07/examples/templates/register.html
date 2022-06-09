@@ -1,0 +1,52 @@
+{% extends '_layout.html' %}
+
+{% block title -%}Register{%- endblock %}
+
+{% block styles %}
+    <link rel='stylesheet' href='{{ url_for('static', filename='css/register.css') }}'>
+{% endblock %}
+
+{% block main %}
+  <fieldset>
+  <legend>Registration form:</legend>
+    <form action='{{ url_for('register_user') }}' method='post'>
+      <label for='username'>Username</label>
+      <input type='text' id='username' name='username' value="{{ username }}" required>
+      {% if errors is not none %}
+          <ul class='errors'>
+            {% for error in errors %}
+              {% if error.field == 'username' %}
+                <li>{{ error.msg }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+      {% endif %}
+
+      <label for='firstname'>Firstname</label>
+      <input type='text' id='firstname' name='firstname' value="{{ firstname }}" required>
+      {% if errors is not none %}
+        <ul class='errors'>
+          {% for error in errors %}
+            {% if error.field == 'firstname' %}
+              <li>{{ error.msg }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      <label for='lastname'>Lastname</label>
+      <input type='text' id='lastname' name='lastname' value="{{ lastname }}" required>
+      {% if errors is not none %}
+        <ul class='errors'>
+          {% for error in errors %}
+            {% if error.field == 'lastname' %}
+              <li>{{ error.msg }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      <button type='submit'>Register</button>
+    </form>
+  </fieldset>
+{% endblock main %}
