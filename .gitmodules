@@ -1,3 +1,6 @@
 [submodule "assets/flask-shop"]
 	path = assets/flask-shop
 	url = https://github.com/nbilalis/flask-shop.git
+[submodule "assets/flask-book"]
+	path = assets/flask-book
+	url = https://github.com/nbilalis/flask-book.git
