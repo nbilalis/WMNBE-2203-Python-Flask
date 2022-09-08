@@ -1,0 +1,29 @@
+{
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": ["--max-line-length=120"],
+    "python.formatting.provider": "autopep8",
+
+    "files.associations": {
+        "*.html": "jinja-html"
+    },
+
+    "emmet.includeLanguages": {
+        "jinja-html": "html"
+    },
+
+    "[python]": {
+        "editor.formatOnSave": true,
+    },
+
+    "[html][django-html][jinja][jinja-html]": {
+        "editor.defaultFormatter": "monosans.djlint",
+        "editor.formatOnSave": false,
+    },
+
+    "search.exclude": {
+        "**/__pycache__": true,
+        "**/.git": true,
+        "**/.venv": true,
+    },
+}

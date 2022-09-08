@@ -1,0 +1,34 @@
+GET http://127.0.0.1:5000/api/v1/users HTTP/1.1
+
+###
+
+GET http://127.0.0.1:5000/api/v1/users/1 HTTP/1.1
+
+###
+
+GET http://127.0.0.1:5000/api/v1/posts HTTP/1.1
+
+###
+
+GET http://127.0.0.1:5000/api/v1/posts/2 HTTP/1.1
+
+###
+
+POST http://127.0.0.1:5000/api/v1/posts HTTP/1.1
+content-type: application/json
+
+{
+    "title": "This is a brand new post!",
+    "body": "Irure nisi laborum pariatur ipsum dolor nostrud ad consequat consequat cillum excepteur sit officia et. Reprehenderit adipisicing enim ipsum ea consectetur ullamco. Amet velit mollit cupidatat incididunt aliquip tempor ad laboris sint nostrud eu consectetur tempor.",
+}
+
+###
+
+POST http://127.0.0.1:5000/api/v1/posts HTTP/1.1
+content-type: application/json
+
+{
+    "author_id": 3,
+    "title": "This is a brand new post!",
+    "body": "Proident irure pariatur aute tempor aute exercitation adipisicing ullamco laboris occaecat. Qui sit irure velit minim. Nisi labore qui enim ipsum aliqua veniam ullamco. Eiusmod sit mollit nostrud tempor irure fugiat."
+}
