@@ -1,0 +1,14 @@
+__pycache__
+
+Dockerfile
+docker-compose.yml
+
+.*
+_setup*
+requirements.txt
+
+test_*
+*.http
+
+README.md
+LICENSE

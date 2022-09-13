@@ -4,3 +4,6 @@
 [submodule "assets/flask-book"]
 	path = assets/flask-book
 	url = https://github.com/nbilalis/flask-book.git
+[submodule "assets/fast-api"]
+	path = assets/fast-api
+	url = https://github.com/nbilalis/fast-api.git
